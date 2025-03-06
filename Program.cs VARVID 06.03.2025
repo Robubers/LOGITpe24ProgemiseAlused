@@ -1,0 +1,70 @@
+﻿using System.Collections;
+using System.Drawing;
+
+namespace randomColor
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Random color");
+
+            colour c = (colour)(new Random()).Next(0, 5);
+
+            //kasutate switchi, et kutsuda esile v+rv
+
+            {
+                case colour.red:
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.Clear(); 
+                    Console.WriteLine("The colour is red")
+                    break;
+
+                case colour.green:
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.Clear();
+                    Console.WriteLine("The colour is green") 
+                    break;
+                case colour.blue:
+                    Console.BackgroundColor = ConsoleColor.Blue; 
+                    Console.Clear();
+                    Console.WriteLine("The colour is blue")
+                    break;
+                case colour.brown:
+                    Console.BackgroundColor = ConsoleColor.brown:
+                    Console.Clear();
+                    Console.WriteLine("The colour is brown")
+                    break;
+                case colour.purple:
+                    Console.BackgroundColor = ConsoleColor.purple:
+                    Console.Clear();
+                    Console.WriteLine("The colour is purple")
+                    break;
+                case colour.white:
+                    Console.BackgroundColor = ConsoleColor.White:
+                    Console.Clear();
+                    Console.WriteLine("The colour is white") 
+                    break;
+
+
+                default: 
+                    Console.WriteLine)
+
+
+
+
+                }
+
+
+
+    }
+
+
+    public enum colour 
+    {
+        Red,
+        Green,
+        Blue,
+        Brown, 
+        Purple,
+        white
